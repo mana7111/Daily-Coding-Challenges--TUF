@@ -1,0 +1,12 @@
+class Solution {
+
+    void printNos(int N) {
+        // code here
+        if (N > 0) { 
+            System.out.print(N+" ");// Base condition to stop recursion when n becomes 0 or negative
+            printNos(N-1);  // Recursive call with n-1
+              // Print the current value of n
+        }
+       
+    }
+}
