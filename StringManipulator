@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in); // Create a Scanner object to read input
+        String A=sc.next(); // Read the first input string
+        String B=sc.next(); // Read the second input string
+
+        // Print the combined length of strings A and B
+        System.out.println(A.length() + B.length());
+
+        // Compare strings A and B lexicographically
+        if(A.compareTo(B) > 0){
+            System.out.println("Yes"); // Print "Yes" if A is lexicographically greater than B
+        } else {
+            System.out.println("No"); // Print "No" if A is not lexicographically greater than B
+        }
+
+        // Capitalize the first letter of both A and B
+        A = (A.substring(0,1)).toUpperCase() + A.substring(1);       
+        B = (B.substring(0,1)).toUpperCase() + B.substring(1);
+
+        // Print the capitalized versions of A and B
+        System.out.println(A + " " + B);
+    }
+}
